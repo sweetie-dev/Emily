@@ -301,7 +301,7 @@ export default function App() {
           <div className="flex items-center justify-center gap-5 mt-10">
             {[
               { icon: <Github size={18} />, label: 'GitHub', href: 'https://github.com/sweetie-dev' },
-              { icon: <Linkedin size={18} />, label: 'LinkedIn', href: 'https://linkedin.com/in/emily-nivea-ribeiro-da-silva' },
+              { icon: <Linkedin size={18} />, label: 'LinkedIn', href: 'https://www.linkedin.com/in/emily-nivea-ribeiro-da-silva-235ba9403/' },
               { icon: <Mail size={18} />, label: 'Email', href: 'mailto:3mysiva@gmail.com' },
             ].map(({ icon, label, href }) => (
               <a
@@ -485,7 +485,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="font-medium text-white text-sm mb-1">LinkedIn</div>
-                  <div className="text-slate-400 text-sm font-mono">linkedin.com/in/emily-nivea-ribeiro-da-silva</div>
+                  <div className="text-slate-400 text-sm font-mono">https://www.linkedin.com/in/emily-nivea-ribeiro-da-silva-235ba9403/</div>
                 </div>
               </div>
               <div className="p-5 rounded-xl bg-slate-900/50 border border-purple-900/20 flex items-start gap-4">

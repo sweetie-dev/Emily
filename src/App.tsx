@@ -29,24 +29,19 @@ const SKILLS = [
 
 const PROJECTS = [
   {
-    title: 'NewBank',
-    description: 'O projeto se chama NewBank: uma plataforma de simulação e aprovação de crédito pra quem vive da informalidade — autônomos, entregadores, freelancers. Pessoas com renda real que o sistema financeiro tradicional insiste em ignorar.',
-    tags: ['TypeScript', 'PostgreSQL', 'CSS', 'HTML'],
-    image: 'src/img/NewBank - Protótipo 6 (3).png',
+    title: 'Fala Pará',
+    description: 'Um dos meus primeiros projetos acadêmicos, o Fala Pará foi desenvolvido com o objetivo de ajudar peso-soas que viriam para o estado do Pará a se adaptarem à cultura e gírias da região.',
+    tags: ['HTML', 'CSS', 'JS'],
+    image: 'src/img/fala-para.png',
+    link: 'https://falapara.netlify.app/',
     featured: true,
   },
   {
     title: 'Moves and Music',
-    description: 'O Movies and Music foi um dos meus primeiros projetos acadêmicos, desenvolvido para colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript. O objetivo do projeto foi criar um site voltado para a apresentação de filmes e músicas, com foco em uma interface organizada, responsiva e de fácil navegação. Durante o desenvolvimento, trabalhei na estruturação das páginas, estilização da interface, manipulação de elementos com JavaScript e organização do código, consolidando minha base em desenvolvimento web.',
+    description: 'O Movies and Music foi meus primeiro projetos acadêmicos, desenvolvido para colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript. O objetivo do projeto foi criar um site voltado para a apresentação de filmes e músicas, com foco em uma interface organizada, responsiva e de fácil navegação. Durante o desenvolvimento, trabalhei na estruturação das páginas, estilização da interface, manipulação de elementos com JavaScript e organização do código, consolidando minha base em desenvolvimento web.',
     tags: ['HTML', 'CSS', 'Javascript',],
-    image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800',
-    featured: false,
-  },
-  {
-    title: 'GreenFarm',
-    description: 'O GreenFarm foi um projeto acadêmico desenvolvido em equipe com o objetivo de criar uma plataforma de comercialização de créditos de carbono. Atuei principalmente no desenvolvimento do front-end, utilizando Vue.js, TypeScript, HTML e CSS, enquanto o projeto também contou com um back-end em Node.js. O sistema foi desenvolvido seguindo uma arquitetura organizada, permitindo a integração entre interface e servidor, proporcionando uma experiência intuitiva para os usuários. Esse projeto contribuiu significativamente para meu aprendizado em desenvolvimento de aplicações modernas e trabalho em equipe.',
-    tags: ['Vue.js', 'TypeScript', 'MongoDB',],
-    image: 'https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'src/img/movies-and-music.png',
+    link: 'https://moviesandmusic.netlify.app/',
     featured: false,
   },
 ];
@@ -123,7 +118,16 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
       <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
         style={{ boxShadow: 'inset 0 0 0 1px rgba(168,85,247,0.3)' }} />
     </div>
+    
   );
+  <a
+  href={project.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-purple-300 hover:text-white"
+>
+  Ver projeto →
+</a>
 }
 
 export default function App() {

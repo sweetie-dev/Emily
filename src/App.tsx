@@ -485,7 +485,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="font-medium text-white text-sm mb-1">LinkedIn</div>
-                  <div className="text-slate-400 text-sm font-mono">https://www.linkedin.com/in/emily-nivea-ribeiro-da-silva-235ba9403/</div>
+                  <div className="text-slate-400 text-sm font-mono">https://linkedin.com/in/emily-nivea-ribeiro-da-silva-235ba9403/</div>
                 </div>
               </div>
               <div className="p-5 rounded-xl bg-slate-900/50 border border-purple-900/20 flex items-start gap-4">
@@ -494,7 +494,7 @@ export default function App() {
                 </div>
                 <div>
                   <div className="font-medium text-white text-sm mb-1">GitHub</div>
-                  <div className="text-slate-400 text-sm font-mono">github.com/sweetie-dev</div>
+                  <div className="text-slate-400 text-sm font-mono">https://github.com/sweetie-dev</div>
                 </div>
               </div>
 

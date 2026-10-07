@@ -7,6 +7,8 @@ import {
 } from 'lucide-react';
 import MatrixCanvas from './MatrixCanvas';
 import useTypewriter from './useTypewriter';
+import falaParaImage from './img/Fala-para.jpg';
+import moviesAndMusicImage from './img/movies-and-music.jpg';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#hero' },
@@ -32,7 +34,7 @@ const PROJECTS = [
     title: 'Fala Pará',
     description: 'Um dos meus primeiros projetos acadêmicos, o Fala Pará foi desenvolvido com o objetivo de ajudar peso-soas que viriam para o estado do Pará a se adaptarem à cultura e gírias da região.',
     tags: ['HTML', 'CSS', 'JS'],
-    image: 'src/img/fala-para.png',
+    image: falaParaImage,
     link: 'https://falapara.netlify.app/',
     featured: true,
   },
@@ -40,7 +42,7 @@ const PROJECTS = [
     title: 'Moves and Music',
     description: 'O Movies and Music foi meus primeiro projetos acadêmicos, desenvolvido para colocar em prática os conhecimentos adquiridos em HTML, CSS e JavaScript. O objetivo do projeto foi criar um site voltado para a apresentação de filmes e músicas, com foco em uma interface organizada, responsiva e de fácil navegação. Durante o desenvolvimento, trabalhei na estruturação das páginas, estilização da interface, manipulação de elementos com JavaScript e organização do código, consolidando minha base em desenvolvimento web.',
     tags: ['HTML', 'CSS', 'Javascript',],
-    image: 'src/img/movies-and-music.png',
+    image: moviesAndMusicImage,
     link: 'https://moviesandmusic.netlify.app/',
     featured: false,
   },
@@ -113,6 +115,14 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
           ))}
         </div>
 
+        <a
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-purple-300 hover:text-white"
+        >
+          Ver projeto →
+        </a>
       </div>
 
       <div className="absolute inset-0 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"
@@ -120,14 +130,6 @@ function ProjectCard({ project }: { project: typeof PROJECTS[0] }) {
     </div>
     
   );
-  <a
-  href={project.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-purple-300 hover:text-white"
->
-  Ver projeto →
-</a>
 }
 
 export default function App() {

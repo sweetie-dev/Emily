@@ -9,7 +9,7 @@ import MatrixCanvas from './MatrixCanvas';
 import useTypewriter from './useTypewriter';
 import falaParaImage from './img/Fala-para.jpg';
 import moviesAndMusicImage from './img/movies-and-music.jpg';
-import SIGAImagr from './img/SIGA.jpg';
+import SIGAImage from './img/SIGA.jpg';
 
 const NAV_LINKS = [
   { label: 'Início', href: '#hero' },

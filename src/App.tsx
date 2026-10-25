@@ -52,7 +52,7 @@ const PROJECTS = [
     description: 'Aplicativo desenvolvido para contribuir com a gestão de resíduos sólidos em Belém, oferecendo recursos de localização de ecopontos, orientações sobre reciclagem e registro de denúncias.',
     tags: ['Flutter', 'Dart', 'Node.js', 'Express', 'SQLite'],
     image: SIGAImage,
-    link: 'https://moviesandmusic.netlify.app/',
+    link: 'https://github.com/lidiatapajos/S.IG.A',
     featured: false,
   },
 ];
